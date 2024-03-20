@@ -1,0 +1,42 @@
+Steps to create a virtual machine in azure vm
+Create an Azure Account:
+If you don’t already have an Azure account, sign up for one. You can create a free account before proceeding.
+Log in to the Azure Portal:
+Visit the Azure Portal.
+Sign in using your Azure credentials.
+Navigate to Virtual Machines:
+On the left-hand navigation, click on “Virtual machines”.
+Create a New VM:
+Click on “Create” and select “Azure virtual machine” from the dropdown options.
+Configure the Basics:
+Fill in the necessary information:
+Resource group: Create a new group or select an existing one.
+Image: Click “See all images” and search for “Kali”.
+Choose the appropriate Kali Linux image.
+Set your username and SSH key pair name (or password if preferred).
+Configure Disks:
+Attach a new disk (if not already attached).
+Keep the default values unless you have specific requirements.
+Configure Networking:
+Set up the NIC (Network Interface Card) settings.
+Ensure that your VM has proper network connectivity.
+Management and Monitoring
+Under “Management,” enable diagnostic settings for monitoring.
+Configure boot diagnostics for troubleshooting.
+ Download Key Pair (For SSH Access):
+If you’ve chosen SSH key authentication, now is a good time to download the generated key pair. This key pair will be crucial for securely logging into your virtual machine. Make sure to store the private key in a safe and accessible location, as it will be used to authenticate your SSH sessions.
+
+
+Review and Create:
+Go to “Review + create”.
+Verify that all settings are correct.
+Click “Create”.
+Wait for Deployment:
+Wait for the deployment to complete.
+Once done, select “Go to resource”.
+
+Connect to Your Kali VM:
+Click “Connect” and choose “SSH”.
+Follow the instructions to connect to your freshly created Kali instance.
+Now you have a  VM running in Azure!
+If you want to ping your vm from kali linux enable ICMP in networking
